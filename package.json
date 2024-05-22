@@ -1,9 +1,11 @@
 {
   "name": "test-coverage",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test-es6": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
     "test": "jest --coverage"
   },
   "keywords": [],
@@ -11,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {}
   }
 }
